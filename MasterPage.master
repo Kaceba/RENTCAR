@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/stile.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="header">
+                <h1>AUTO BROVIA SRL</h1>
+                <img id="logo" src ="img/logo.jpg" />
+            </div>
+            
+            <div id="menu">
+                <h4>Spese</h4>
+                <ul>
+                    <li><a href="GestisciSpese.aspx">Gestisci Spese</a></li>
+                </ul>
+                <h4>Tipi Spese</h4>
+                <ul>
+                    <li><a href="GestisciTipiSpese.aspx">Gestisci Tipi Spese</a></li>
+                </ul>
+                <h4>Marche</h4>
+                <ul>
+                    <li><a href="GestisciMarche.aspx">Gestisci Marche</a></li>
+                </ul>
+                <h4>Modelli</h4>
+                <ul>
+                    <li><a href="GestisciModelli.aspx">Gestisci Modelli</a></li>
+                </ul>
+                <h4>Parco Auto</h4>
+                <ul>
+                    <li><a href="GestisciAuto.aspx">Gestisci Auto</a></li>
+                </ul>
+                <h4>Clienti</h4>
+                <ul>
+                    <li><a href="GestisciClienti.aspx">Gestisci Clienti</a></li>
+                </ul>
+                <h4>Contratti</h4>
+                <ul>
+                    <li><a href="GestisciContratti.aspx">Gestisci Contratti</a></li>
+                </ul>
+                <h4>Contabilità</h4>
+                <ul>
+                    <li><a href="Contabilita.aspx">Riepilogo Fatturazione</a></li>
+                </ul>
+
+            </div>
+
+            <div id="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="footer">
+                Auto Brovia srl <br />
+                Via le mani dagli Occhi 46 <br />
+                24100 Bergamo (BG) <br />
+                CF/P.IVA 0365984545
+            </div>
+        </div>
+    </form>
+</body>
+</html>
